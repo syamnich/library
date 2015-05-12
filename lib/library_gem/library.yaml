@@ -1,0 +1,90 @@
+--- !ruby/object:GemLibrary::Library
+books:
+- &2 !ruby/object:GemLibrary::Book
+  title: Softswitch
+  author: &1 !ruby/object:GemLibrary::Author
+    name: Goldshtein
+    biography: biography1
+- &3 !ruby/object:GemLibrary::Book
+  title: The Ruby Way
+  author: &10 !ruby/object:GemLibrary::Author
+    name: Fulton
+    biography: biography2
+- &4 !ruby/object:GemLibrary::Book
+  title: Ruby on Rails Tutorial
+  author: &11 !ruby/object:GemLibrary::Author
+    name: Hartl
+    biography: biography3
+- &5 !ruby/object:GemLibrary::Book
+  title: IP-telephony
+  author: *1
+orders:
+- !ruby/object:GemLibrary::Order
+  book: *2
+  reader: &7 !ruby/object:GemLibrary::Reader
+    name: John
+    email: jonh@gmail.com
+    city: LA
+    street: m1
+    house: 1
+  date: 2015-05-12 16:04:41.544877444 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *3
+  reader: &6 !ruby/object:GemLibrary::Reader
+    name: Alex
+    email: alex@gmail.com
+    city: LA
+    street: r11
+    house: 2
+  date: 2015-05-12 16:04:41.544883121 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *4
+  reader: &9 !ruby/object:GemLibrary::Reader
+    name: David
+    email: david@gmail.com
+    city: LA
+    street: r3
+    house: 3
+  date: 2015-05-12 16:04:41.544885449 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *5
+  reader: &8 !ruby/object:GemLibrary::Reader
+    name: Michael
+    email: michael@gmail.com
+    city: LA
+    street: gt5
+    house: 4
+  date: 2015-05-12 16:04:41.544887668 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *2
+  reader: *6
+  date: 2015-05-12 16:04:41.544891496 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *2
+  reader: *6
+  date: 2015-05-12 16:04:41.544893076 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *2
+  reader: *6
+  date: 2015-05-12 16:04:41.544894423 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *3
+  reader: *7
+  date: 2015-05-12 16:04:41.544896145 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *4
+  reader: *6
+  date: 2015-05-12 16:04:41.544897777 +03:00
+- !ruby/object:GemLibrary::Order
+  book: *2
+  reader: *8
+  date: 2015-05-12 16:04:41.544899132 +03:00
+readers:
+- *7
+- *6
+- *9
+- *8
+authors:
+- *1
+- *10
+- *11
